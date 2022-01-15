@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailUserActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_profile_user"
+        android:layout_width="@dimen/sixty_four_dp"
+        android:layout_height="@dimen/sixty_four_dp"
+        android:layout_marginStart="@dimen/twenty_four_dp"
+        android:layout_marginTop="@dimen/twenty_four_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:strokeColor="@color/divider"
+        app:strokeWidth="1dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_name_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twelve_dp"
+        android:layout_marginEnd="@dimen/twenty_four_dp"
+        android:text="@string/dummy_name"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="@dimen/twenty_sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_profile_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_profile_user"
+        app:layout_constraintTop_toTopOf="@+id/iv_profile_user"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/tv_uname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/four_dp"
+        android:layout_marginEnd="@dimen/twenty_four_dp"
+        android:text="@string/dummy_uname"
+        android:textColor="@color/grey70"
+        android:textFontWeight="400"
+        android:textSize="@dimen/fourteen_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_name_user"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_user" />
+
+    <TextView
+        android:id="@+id/tv_motto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twelve_dp"
+        android:text="@string/dummy_motto"
+        android:textSize="@dimen/fourteen_sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_uname"
+        app:layout_constraintTop_toBottomOf="@id/tv_uname" />
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/twenty_four_dp"
+        android:layout_marginTop="@dimen/sixten_dp"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@+id/tv_motto" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_repository"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_divider"
+        tools:listitem="@layout/list_repository" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

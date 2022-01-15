@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Github User</string>
+    <string name="dummy_name">Michael Brown</string>
+    <string name="image_desc">Image</string>
+    <string name="dummy_uname">michaelstrong</string>
+    <string name="dummy_motto">Android Enginer, learn is my passion</string>
+    <string name="dummy_name_repository">Android Clean Architecture</string>
+    <string name="dummy_desc_repository">This is a sample app that is part of a series of blog posts I have written about how to architect an android application using Uncle Bob\'s clean architecture approach.</string>
+    <string name="dummy_number_star">55</string>
+    <string name="dummy_latest_update_repository">Update 15 hours ago</string>
 </resources>
