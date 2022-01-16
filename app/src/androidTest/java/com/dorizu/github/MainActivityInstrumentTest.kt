@@ -1,4 +1,4 @@
-package com.dorizu.github.presentation.home
+package com.dorizu.github
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.test.espresso.Espresso.onView
@@ -8,7 +8,7 @@ import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.ActivityTestRule
-import com.dorizu.github.R
+import com.dorizu.github.presentation.home.MainActivity
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
