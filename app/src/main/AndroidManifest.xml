@@ -14,9 +14,11 @@
         android:theme="@style/Theme.GithubUser">
         <activity
             android:name=".presentation.detail.DetailUserActivity"
+            android:label="Detail User"
             android:exported="false" />
         <activity
             android:name=".presentation.home.MainActivity"
+            android:theme="@style/Theme.GithubUser.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
